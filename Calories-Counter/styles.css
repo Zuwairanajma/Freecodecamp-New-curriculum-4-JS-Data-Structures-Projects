@@ -24,3 +24,14 @@
     width: 90%;
     max-width: 680px;
   }
+
+  h1,
+  .container,
+  .output {
+    margin: 20px auto;
+  }
+  
+  label,
+  legend {
+    font-weight: bold;
+  }
