@@ -49,3 +49,23 @@
     border: 2px solid var(--dark-yellow);
   }
   
+  .clear {
+    background-color: var(--light-pink);
+    color: var(--dark-red);
+    border-color: var(--dark-red);
+  }
+  
+  button,
+  input,
+  select {
+    min-height: 24px;
+    color: var(--dark-blue);
+  }
+  
+  fieldset,
+  label,
+  button,
+  input,
+  select {
+    margin-bottom: 10px;
+  }
