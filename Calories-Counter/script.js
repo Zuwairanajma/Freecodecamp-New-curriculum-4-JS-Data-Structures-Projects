@@ -84,3 +84,14 @@ function cleanInputString(str) {
     return calories;
   }
   
+  function clearForm() {
+    const inputContainers = Array.from(document.querySelectorAll('.input-container'));
+  
+    for (let i = 0; i < inputContainers.length; i++) {
+      inputContainers[i].innerHTML = '';
+    }
+  
+    budgetNumberInput.value = '';
+    output.innerText = '';
+    output.classList.add('hide');
+  }
