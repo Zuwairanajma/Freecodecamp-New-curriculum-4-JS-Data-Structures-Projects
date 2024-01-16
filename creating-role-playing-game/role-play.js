@@ -164,3 +164,22 @@ function goTown() {
     fighting = 0;
     goFight();
   }
+
+  function fightBeast() {
+    fighting = 1;
+    goFight();
+  }
+  
+  function fightDragon() {
+    fighting = 2;
+    goFight();
+  }
+  
+  function goFight() {
+    update(locations[3]);
+    monsterHealth = monsters[fighting].health;
+    monsterStats.style.display = "block";
+    monsterName.innerText = monsters[fighting].name;
+    monsterHealthText.innerText = monsterHealth;
+  }
+  
