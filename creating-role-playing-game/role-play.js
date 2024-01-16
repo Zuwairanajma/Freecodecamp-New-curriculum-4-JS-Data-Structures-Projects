@@ -16,14 +16,12 @@ const goldText = document.querySelector("#goldText");
 const monsterStats = document.querySelector("#monsterStats");
 const monsterName = document.querySelector("#monsterName");
 const monsterHealthText = document.querySelector("#monsterHealth");
-
 const weapons = [
     { name: 'stick', power: 5 },
     { name: 'dagger', power: 30 },
     { name: 'claw hammer', power: 50 },
     { name: 'sword', power: 100 }
   ];
-
   const monsters = [
     {
       name: "slime",
@@ -41,7 +39,6 @@ const weapons = [
       health: 300
     }
   ]
-
   const locations = [
     {
         name: "town square",
@@ -92,3 +89,19 @@ const weapons = [
         text: "You find a secret game. Pick a number above. Ten numbers will be randomly chosen between 0 and 10. If the number you choose matches one of the random numbers, you win!"
     }
 ];
+
+button1.onclick = goStore;
+button2.onclick = goCave;
+button3.onclick = fightDragon;
+
+function update(location) {
+  monsterStats.style.display = "none";
+  button1.innerText = location["button text"][0];
+  button2.innerText = location["button text"][1];
+  button3.innerText = location["button text"][2];
+  button1.onclick = location["button functions"][0];
+  button2.onclick = location["button functions"][1];
+  button3.onclick = location["button functions"][2];
+  text.innerText = location.text;
+}
+
