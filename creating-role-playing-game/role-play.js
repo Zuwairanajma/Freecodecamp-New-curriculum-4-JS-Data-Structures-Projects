@@ -105,3 +105,15 @@ function update(location) {
   text.innerText = location.text;
 }
 
+function goTown() {
+    update(locations[0]);
+  }
+  
+  function goStore() {
+    update(locations[1]);
+  }
+  
+  function goCave() {
+    update(locations[2]);
+  }
+  
