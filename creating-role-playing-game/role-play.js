@@ -204,3 +204,17 @@ function goTown() {
       currentWeapon--;
     }
   }
+  function getMonsterAttackValue(level) {
+    const hit = (level * 5) - (Math.floor(Math.random() * xp));
+    console.log(hit);
+    return hit > 0 ? hit : 0;
+  }
+  
+  function isMonsterHit() {
+    return Math.random() > .2 || health < 20;
+  }
+  
+  function dodge() {
+    text.innerText = "You dodge the attack from the " + monsters[fighting].name;
+  }
+  
