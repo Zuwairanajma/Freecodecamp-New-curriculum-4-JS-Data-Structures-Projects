@@ -18,3 +18,14 @@ body {
   text-align: center;
   padding: 10px;
 }
+
+title,
+.options-label,
+.team-stats,
+footer {
+  color: var(--white);
+}
+
+.title {
+  margin: 1.3rem 0;
+}
