@@ -78,3 +78,13 @@ select {
   padding-left: 5px;
   transition: background-color 0.3s ease, border-color 0.3s ease;
 }
+
+.select-icon svg.icon {
+  transition: fill 0.3s ease;
+  fill: var(--dark-grey);
+}
+
+#current-date {
+  font-size: 2rem;
+  text-align: center;
+}
