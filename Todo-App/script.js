@@ -12,3 +12,24 @@ const descriptionInput = document.getElementById("description-input");
 
 const taskData = JSON.parse(localStorage.getItem("data")) || [];
 let currentTask = {};
+
+const addOrUpdateTask = () => {
+    const dataArrIndex = taskData.findIndex((item) => item.id === currentTask.id);
+    const taskObj = {
+      id: `${titleInput.value.toLowerCase().split(" ").join("-")}-${Date.now()}`,
+      title: titleInput.value,
+      date: dateInput.value,
+      description: descriptionInput.value,
+    };
+  
+    if (dataArrIndex === -1) {
+      taskData.unshift(taskObj);
+    } else {
+      taskData[dataArrIndex] = taskObj;
+    }
+  
+    localStorage.setItem("data", JSON.stringify(taskData));
+    updateTaskContainer()
+    reset()
+  };
+  
