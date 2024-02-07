@@ -44,3 +44,20 @@ h1 {
   border: none;
   padding: 4px;
 }
+
+.number-input {
+  height: 25px;
+}
+
+#result {
+  margin: 10px 0;
+  min-width: 200px;
+  width: fit-content;
+  min-height: 80px;
+  word-break: break-word;
+  padding: 15px;
+  border: 5px solid var(--orange);
+  font-size: 2rem;
+  text-align: center;
+}
+
