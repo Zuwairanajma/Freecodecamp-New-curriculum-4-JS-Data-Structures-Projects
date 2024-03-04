@@ -63,3 +63,20 @@ const animationData = [
   result.textContent = decimalToBinary(5);
     }, 20000);
   };
+
+  const checkUserInput = () => {
+    const inputInt = parseInt(numberInput.value);
+  
+    if (!numberInput.value || isNaN(inputInt)) {
+      alert("Please provide a decimal number");
+      return;
+    }
+  
+    if (inputInt === 5) {
+      showAnimation();
+      return;
+    }
+  
+    result.textContent = decimalToBinary(inputInt);
+    numberInput.value = "";
+  };
