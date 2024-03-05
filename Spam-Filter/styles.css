@@ -25,3 +25,26 @@ body,
 #message-input:placeholder-shown {
   text-align: center;
 }
+
+textarea {
+    max-width: 90%;
+  }
+  
+  .main-text {
+    margin: 25px 0;
+  }
+  
+  .title {
+    font-size: 2.5rem;
+  }
+  
+  .description {
+    margin-top: 15px;
+    font-size: 1.4rem;
+  }
+  
+  .message-label {
+    display: block;
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+  }
